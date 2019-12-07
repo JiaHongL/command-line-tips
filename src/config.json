@@ -1,0 +1,32 @@
+[{
+        "main": "Angular",
+        "subList": [
+            {
+                "name": "host開發(常用ip)",
+                "value": "ng01",
+                "type":"script",
+                "count": 0,
+                "scripts": ["ng serve --host 172.xx.xx.x --proxy-config proxy.config.json"],
+                "descriptions": []
+            },
+            {
+                "name": "host開發(自訂ip)",
+                "value": "ng02",
+                "type":"script",
+                "count": 1,
+                "scripts": ["ng serve --host ", " --proxy-config proxy.config.json"],
+                "descriptions": [
+                    "請輸入ip"
+                ]
+            }
+        ]
+    },
+    {
+        "main": "Git",
+        "subList": []
+    },
+    {
+        "main": "Other",
+        "subList": []
+    }
+]

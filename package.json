@@ -1,0 +1,38 @@
+{
+  "bin": {
+    "clt": "./dist/index.js"
+  },
+  "name": "command-line-tips",
+  "version": "0.0.1",
+  "description": "make self clt",
+  "main": "index.js",
+  "scripts": {
+    "test": "clt",
+    "serve": "tsc --watch",
+    "build": "tsc && npm link"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JiaHongL/command-line-tips.git"
+  },
+  "author": "Joe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JiaHongL/command-line-tips/issues"
+  },
+  "homepage": "https://github.com/JiaHongL/command-line-tips#readme",
+  "dependencies": {
+    "@types/commander": "2.12.2",
+    "@types/inquirer": "6.5.0",
+    "@types/shelljs": "0.8.6",
+    "commander": "4.0.1",
+    "inquirer": "7.0.0",
+    "shelljs": "0.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "12.12.14",
+    "nodemon": "2.0.1",
+    "ts-node": "8.5.4",
+    "typescript": "3.7.3"
+  }
+}
