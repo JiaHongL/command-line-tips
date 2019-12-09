@@ -1,9 +1,9 @@
 # command-line-tips
 
 ## install
-cd command-line-tips
-npm install
-npm run build
+cd command-line-tips  
+npm install  
+npm run build  
 
 ## unstall
 npm unlink command-line-tips
