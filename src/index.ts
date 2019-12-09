@@ -105,7 +105,11 @@ const setSubChoices = (main: string) => {
 
   subPrompt[0].choices = subList
     .filter(item => item.main === main)
-    .map(item => item.subList)[0];
+    .map(item => item.subList)[0]
+    .map((item,index) => {
+      item['value'] = index;
+      return item;
+    });
 
 };
 
@@ -113,15 +117,15 @@ const setSubChoices = (main: string) => {
  * 獲取小類某個屬性
  *
  * @param {string} main - 大類
- * @param {string} sub - 小類
+ * @param {string} index - 哪一個
  * @param {string} key - 屬性k
  * @returns {(number | string | string[])}
  */
-const getSubProperty = (main: string, sub: string, key: string): number | string | string[] => {
+const getSubProperty = (main: string, index: string, key: string): number | string | string[] => {
 
   return configJson
     .filter(item => item.main === main)[0].subList
-    .filter(item => item.value === sub)[0][key]
+    .filter(item => item['value'] === index)[0][key]
 
 }
 
