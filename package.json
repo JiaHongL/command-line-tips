@@ -24,15 +24,15 @@
   "dependencies": {
     "@types/commander": "2.12.2",
     "@types/inquirer": "6.5.0",
-    "@types/shelljs": "0.8.6",
-    "commander": "4.0.1",
-    "inquirer": "7.0.0",
-    "shelljs": "0.8.3"
+    "@types/shelljs": "0.8.8",
+    "commander": "5.1.0",
+    "inquirer": "7.1.0",
+    "shelljs": "0.8.4"
   },
   "devDependencies": {
-    "@types/node": "12.12.14",
-    "nodemon": "2.0.1",
-    "ts-node": "8.5.4",
-    "typescript": "3.7.3"
+    "@types/node": "14.0.4",
+    "nodemon": "2.0.4",
+    "ts-node": "8.10.1",
+    "typescript": "3.9.3"
   }
 }
